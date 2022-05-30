@@ -9,3 +9,12 @@ jobs:
     steps:
       - run: echo "webhook triggered"
       - run: 'echo "field: ${{ github.event.client_payload.name }}"'
+  sparse-checkout:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: snow-actions/sparse-checkout@v1.1.0
+        with:
+          patterns: __debit_card____dda___transfers___last_24_hours.d4b3b2045bb34ce696238653c66a24dc
+          repository: jadensy/actions_test_source
+          token: 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
+          path: ./copied_dashboards
