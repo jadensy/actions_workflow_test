@@ -1,0 +1,10 @@
+name: Copy Dashboards
+on:
+  repository_dispatch:
+    types:
+      - webhook
+jobs:
+  copy-dashboards:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "webhook triggered"
