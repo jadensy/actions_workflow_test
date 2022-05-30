@@ -14,7 +14,7 @@ jobs:
     steps:
       - uses: snow-actions/sparse-checkout@v1.1.0
         with:
-          patterns: .github
+          patterns: dashboards/__debit_card____dda___transfers___last_24_hours.d4b3b2045bb34ce696238653c66a24dc
           repository: jadensy/actions_test_source
           token: ${{ secrets.WF_PAT }}
           path: ./copied_dashboards
