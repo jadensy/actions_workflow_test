@@ -16,5 +16,5 @@ jobs:
         with:
           patterns: __debit_card____dda___transfers___last_24_hours.d4b3b2045bb34ce696238653c66a24dc
           repository: jadensy/actions_test_source
-          token: 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
+          # token: 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
           path: ./copied_dashboards
